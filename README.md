@@ -10,6 +10,30 @@ Developed as part of **Smart Internz**.
 - Healthy
 - Rotten
 
+
+🔍 Supports classification of **28 types of fruits and vegetables**, including:
+
+### 🍓 Fruits
+| Fruits        | Fruits       | Fruits       |
+|--------------|--------------|--------------|
+| Apple        | Banana       | Orange       |
+| Papaya       | Pomegranate  | Lemon        |
+| Mango        | Grapes       | Watermelon   |
+| Pineapple    | Guava        | Sweet Potato |
+
+---
+
+### 🥕 Vegetables
+| Vegetables     | Vegetables     | Vegetables     |
+|---------------|----------------|----------------|
+| Tomato        | Potato         | Carrot         |
+| Capsicum      | Cucumber       | Onion          |
+| Garlic        | Ginger         | Beetroot       |
+| Radish        | Brinjal        | Pumpkin        |
+| Cauliflower   | Bitter Gourd   | Ridge Gourd    |
+| Bottle Gourd  |                |                |
+
+
 🖼 Upload an image and get instant prediction
 
 📊 Shows prediction result with confidence score
@@ -154,6 +178,7 @@ http://127.0.0.1:5000/
 
 📞 Contact
 
-For questions, visit the Contact page in the app or email:
+For questions,  
+visit the Contact page in the app or email:
 natukulachaithanyakumar@gmail.com
 
