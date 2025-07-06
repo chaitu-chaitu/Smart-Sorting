@@ -89,19 +89,23 @@ model.save("fruit_veggie_model.h5")
 
 ⚙ Installation & Run Instructions
 ## 1. Clone the repository
+```
 git clone https://github.com/your-username/smart-sorting.git
 cd smart-sorting
-
+```
 ## 2. Install dependencies
+```
 pip install -r requirements.txt
-
+```
 
 ## 3. Run the app
+```
 python app.py
-
-Then open in browser:
+```
+- Then open in browser:
+```
 http://127.0.0.1:5000/
-
+```
 ## 📂 Project Structure
 ```
 ├── app.py                   # Flask web app
@@ -117,6 +121,36 @@ http://127.0.0.1:5000/
 ├── presentation.pptx       # Presentation slides
 └── README.md                # This file
 ```
+
+
+🧠 Scenarios of Application
+🏭 Scenario 1: Automated Quality Control
+- Integrate with production lines
+
+- Real-time detection of rotten produce
+
+- Reduce manual inspection and waste
+
+📦 Scenario 2: Smart Retail Systems
+- Check produce freshness before packing or displaying
+
+- Automate alerts for restocking or removal
+
+📚 Scenario 3: Educational & Research Tools
+- Teach students about image classification and food safety
+
+- Demonstrate practical machine learning applications
+
+🛠️ Tech Stack
+- Frontend: HTML, CSS
+
+- Backend: Flask
+
+- Model: Keras/TensorFlow CNN
+
+- Deployment (Local): Flask
+
+
 
 📞 Contact
 
