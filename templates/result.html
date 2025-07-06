@@ -1,0 +1,109 @@
+<!-- result.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prediction Result</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    header {
+      background-color: #111;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+    }
+
+    nav a.active {
+      border-bottom: 2px solid #ff4f81;
+    }
+
+    .hero {
+      height: 100vh;
+      /* background: url('pexels.jpg') no-repeat center center/cover; */
+      background: url('fruits and vegetables.jpg') no-repeat center center/cover;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+
+    .hero h2 {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 10px 20px;
+      border-radius: 20px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin: 10px 0;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .hero .btn {
+      padding: 10px 20px;
+      border: 2px solid white;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: all 0.3s;
+    }
+
+    .hero .btn:hover {
+      background-color: white;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">NUTRIGAZE</div>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="predict.html">Predict</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <section class="result">
+    <h2>FreshEye Detection Result</h2>
+    {% if prediction %}
+      <p><strong>Prediction:</strong> {{ prediction }}</p>
+      <img src="{{ image_url }}" alt="Uploaded Image" width="300">
+    {% else %}
+      <p>No prediction available.</p>
+    {% endif %}
+    <br><br>
+    <a href="{{ url_for('predict') }}" class="btn">Try Another Image</a>
+  </section>
+</body>
+</html>
+
